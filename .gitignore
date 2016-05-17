@@ -3,3 +3,4 @@ app/public/.sass-cache
 app/public/uploads
 app/node_modules
 app/data/submissions.db
+!.keep

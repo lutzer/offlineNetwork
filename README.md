@@ -58,7 +58,7 @@
           listen 80;
 
           server_name  localhost on.app;
-          root   /home/pi/www;
+          root   /home/pi/offlineNetwork/www;
 
           client_max_body_size 30M;
 
@@ -81,6 +81,7 @@
               rewrite ^ http://on.app/start/ permanent;
           }
 
+    	  # /app/ goes to node server
           location /app {
               proxy_pass http://192.168.72.2:8081;
               proxy_http_version 1.1;
