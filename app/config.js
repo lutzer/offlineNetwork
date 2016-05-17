@@ -9,7 +9,7 @@ var Config = {
 
 	questionFilePath : __dirname + "/data/questions.json",
 
-	baseUrl : '/', // with trailing /
+	baseUrl : '/app/', // with trailing /
 	servePublicDir : true,
 	hostname : false, // 127.0.0.1 = private, false = public
 	port : '8080'
