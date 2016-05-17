@@ -65,24 +65,68 @@ router.get('/delete/:id',function(req,res){
 
 });
 
+router.post('/letterbox/', upload.single('file'), function (req, res) {
+  
+    req.body.questionId = -1;
+    req.body.results = [
+    {
+        id: 'picture',
+        type: 'image',
+        label: res.body.message,
+        file: true,
+        length: 50
+    }];
+
+    //create submission data
+    var data = {
+        results : req.body.results,
+        questionId : req.body.questionId
+    }
+
+    console.log(data);
+
+    _.each(data.results, function(val) {
+        if (val.result)
+            val.result = htmlspecialchars(val.result);
+    });
+
+    if (req.file) {
+        //insert filepath to data object
+        var index = _.findIndex(data.results, {type : 'image'});
+        data.results[index].file = req.file.originalname;
+    }
+
+    console.log(data);
+
+    submissions.create(data, function(err, docs) {
+
+        utils.handleError(err);
+
+        console.log('Submission added to database');
+
+        object = docs[0];
+        var objectId = object._id;
+
+        // copy file to submissions folder
+        if (req.file)
+            submissions.saveFile(objectId,req.file);
+
+        // trigger socket event
+        appEvents.emit('submissions:added',object)
+
+        // send answer
+        res.send(object);
+
+    });
+
+}
+
 /*
  * POST /api/submissions/
  */ 
 router.post('/', upload.single('file'), function (req, res) {
 
     console.log('Received new Submission');
-
-    if (_.has(res.body,'device')) {
-        req.body.questionId = -1;
-        req.body.results = [
-        {
-            id: 'picture',
-            type: 'image',
-            label: res.body.message,
-            file: true,
-            length: 50
-        }];
-    }
 
     //deserialize data, if multipart form
     if (typeof(req.body.results) == 'string')
@@ -95,9 +139,6 @@ router.post('/', upload.single('file'), function (req, res) {
         results : req.body.results,
         questionId : req.body.questionId
     }
-
-
-    console.log(data)
 
     //clean htmlspecialchars
     _.each(data.results, function(val) {
