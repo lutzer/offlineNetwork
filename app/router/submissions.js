@@ -72,6 +72,18 @@ router.post('/', upload.single('file'), function (req, res) {
 
     console.log('Received new Submission');
 
+    if (_.has(res.body,'device')) {
+        req.body.questionId = -1;
+        req.body.results = [
+        {
+            id: 'picture',
+            type: 'image',
+            label: res.body.message,
+            file: true,
+            length: 50
+        }];
+    }
+
     //deserialize data, if multipart form
     if (typeof(req.body.results) == 'string')
         req.body.results = JSON.parse(req.body.results);
@@ -84,6 +96,8 @@ router.post('/', upload.single('file'), function (req, res) {
         questionId : req.body.questionId
     }
 
+
+    console.log(data)
 
     //clean htmlspecialchars
     _.each(data.results, function(val) {
