@@ -1,0 +1,32 @@
+ <fieldset class="pure-group">
+ 	<% if (type == 'text') { %>
+ 	<label for="input-<%= cid %>"><%= label %></label>
+    <textarea class="pure-input-rounded input-element" id="input-<%= cid %>" placeholder="Type text here" maxlength="<%= length %>"></textarea>
+    <p>(Maximum of <%= length %> characters)</p>
+    <% } else if (type == 'image') { %>
+    <p><%= label %></p>
+    <label for="fileChooser"><span class="pure-button">TAKE PICTURE</span></label>
+    <input type="file" name="file" class="pure-input-rounded input-element" id="fileChooser" accept="image/x-png, image/gif, image/jpeg" style="display:none">
+    <span id="result-text" class="hidden">Picture taken!</span>
+    <% } else if (type == 'string') { %>
+    <label for="input-<%= cid %>"><%= label %></label>
+    <input type="text" class="pure-input-rounded input-element" id="input-<%= cid %>" <% if (result) { %> value="<%= result %>"<% } %> maxlength="<%= length %>">
+    <% } else if (type == 'string') { %>
+    <label for="input-<%= cid %>"><%= label %></label>
+    <input type="text" class="pure-input-rounded input-element" id="input-<%= cid %>">
+    <% } else if (type == 'poll') { %>
+    <p><%= label %></p>
+    <div class="radio-button-box">
+	    <% _.each(values, function(val,key) { %>
+	    <label for="input-<%= cid %>-<%= key %>" class="pure-radio">
+	        <input id="input-<%= cid %>-<%= key %>" class="input-element" type="radio" name="radio-<%= cid %>" value="<%= key %>">
+	        <%= val %>
+	    </label>
+   		<% }); %>
+   	</div>
+    <% } %>
+</fieldset>
+
+
+
+	

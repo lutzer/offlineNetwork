@@ -1,0 +1,20 @@
+<div class="question card shadow blue light">
+	<h2 class="blue"># <%= _id %></h2>
+	<% _.each(results, function(result) { %>
+		<% if (!result.result) return; %>
+		<h3><%= result.label %></h3>
+		<% if (result.type == 'image') { %>
+			<div class="center">
+				<img src="<%= path+result.file %>">
+			</div>
+		<% } else if (result.type == 'poll') { %>
+			<ul class="poll-list">
+			<% _.each(result.values, function(val,key) { %>
+            	<li class="<%= key == result.result ? 'selected' : 'not-selected' %>"><%= val %></li>
+			<% }) %>
+			</ul>
+		<% } else { %>
+			<p><%= result.result %></p>
+		<% } %>
+	<% }); %>
+</div>

@@ -1,0 +1,84 @@
+[
+	{
+		"id" : 0,
+		"visible" : true,
+		"title" : "People",
+		"text" : "Which person(s) would you like to work with in the future?",
+		"category" : "people",
+		"type" : "picture",
+		"color" : "green",
+		"actions" : [
+			{ 
+				"id" : "name",
+				"type" : "string",
+			    "label" : "Your Name" 
+			},
+			{ 
+				"id" : "place",
+				"type" : "string",
+			    "label" : "Where are you from?" 
+			},
+			{ 
+				"id" : "picture",
+				"type" : "image",
+				"label" : "Which person(s) would you like to work with in the future? Take a selfie with them." 
+			}
+		]
+		 
+	},
+	{
+		"id" : 1,
+		"visible" : true,
+		"title" : "Moment",
+		"text" : "Share a picture you took in the last three days.",
+		"category" : "people",
+		"type" : "picture",
+		"color" : "blue",
+		"actions" : [
+			{ 
+				"id" : "name",
+				"type" : "string",
+			    "label" : "Your Name" 
+			},
+			{ 
+				"id" : "place",
+				"type" : "string",
+			    "label" : "Where are you from?" 
+			},
+			{ 
+				"id" : "picture",
+				"type" : "image",
+				"label" : "Share a picture you took in the last three days." 
+			}
+		]
+		 
+	},
+	{
+		"id" : 2,
+		"visible" : true,
+		"title" : "Vision",
+		"text" : "What is your idea or vision for future projects?",
+		"category" : "people",
+		"type" : "text",
+		"color" : "pink",
+		"actions" : [
+			{ 
+				"id" : "name",
+				"type" : "string",
+			    "label" : "Your Name" 
+			},
+			{ 
+				"id" : "place",
+				"type" : "string",
+			    "label" : "Where are you from?" 
+			},
+			{ 
+				"id" : "text",
+				"type" : "text",
+				"label" : "What is your idea or vision for future projects?",
+				"length" : 80
+			}
+		]
+		 
+	}
+]

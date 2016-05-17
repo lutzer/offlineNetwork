@@ -1,0 +1,14 @@
+<div>
+	<div class="back-button"><a href="#"></a></div>
+	<h1 class="link">Questions</h1>
+	<div>
+		<% _.each(items, function(item){ %>
+		<a href="#questions/<%= item.id %>">
+		<div class="question card shadow <%= item.color %> light" id="<%= item.id %>">
+			<h2 class="<%= item.color %>"><%= item.title %></h2>
+			<p><%= item.text %></p>
+		</div>
+		</a>
+		<% }); %>
+	</div>
+</div>
