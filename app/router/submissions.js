@@ -65,6 +65,7 @@ router.get('/delete/:id',function(req,res){
 
 });
 
+/* LETTERBOX POST on /api/submissions/letterbox/ */
 router.post('/letterbox/', upload.single('file'), function (req, res) {
   
     req.body.questionId = -1;
