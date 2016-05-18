@@ -66,24 +66,24 @@
           
           # apple captive test1
           location /hotspot-detect.html {
-              rewrite ^ http://on.app/start/apple/success.html;
+              rewrite ^ http://on.lan/start/apple/success.html;
           }
 
           # apple captive test2
           location /library/test/success.html {
-              rewrite ^ http://on.app/start/apple/success.html;
+              rewrite ^ http://on.lan/start/apple/success.html;
           }
 
           location / {
-              if ($host = 'on.app') {
-                  rewrite ^ http://on.app/app/ last;
+              if ($host = 'on.lan') {
+                  rewrite ^ http://on.lan/app/ last;
               }
-              rewrite ^ http://on.app/start/ permanent;
+              rewrite ^ http://on.lan/start/ permanent;
           }
 
     	  # /app/ goes to node server
           location /app {
-              proxy_pass http://192.168.72.2:8081;
+              proxy_pass http://192.168.72.2:8080;
               proxy_http_version 1.1;
               proxy_set_header Upgrade $http_upgrade;        
               proxy_set_header Host $host;
@@ -107,12 +107,12 @@
 
 #### setup node.js process managaer
 
-* install: npm install pm2 -g
-* add app to process manager: pm2 start app.js
+* install: `npm install pm2 -g`
+* add app to process manager: `pm2 start app.js`
 * make sure you start pm2 processes logged in with user pi
-* list processes: pm2 list and save config with pm2 save
-* create sytemd startup script, login as su: pm2 startup systemd -u pi
-* systemctl daemon-reload && systemctl enable pm2 && systemctl start pm2
+* list processes: `pm2 list` and save config with `pm2 save`
+* create sytemd startup script, login as su: `pm2 startup systemd -u pi`
+* `systemctl daemon-reload; systemctl enable pm2; systemctl start pm2`
 
 ### resize partition
 
@@ -133,3 +133,9 @@ Now you need to reboot:
 * after reboot: sudo resize2fs /dev/mmcblk0p2
 
 
+## Troubleshooting
+
+* If captive portal page keep on popping up on projection mac:
+  * rename `/System/Library/CoreServices/Captive Network Assistant.app`into `/System/Library/CoreServices/No More Captive Network Assistant.app`
+
+  ​
