@@ -124,7 +124,6 @@ router.post('/', upload.single('file'), function (req, res) {
 router.post('/letterbox/', upload.single('file'), function (req, res) {
 
     console.log("Received Submission from letterbox");
-    console.log(req.body);
 
     //create submission data
     var data = {
@@ -132,8 +131,9 @@ router.post('/letterbox/', upload.single('file'), function (req, res) {
             id: 'picture',
             type: 'image',
             label: req.body.message,
-            file: true,
-            length: 50
+            file: '',
+            length: 50,
+            result: true
         }],
         questionId : -1
     }
@@ -150,7 +150,6 @@ router.post('/letterbox/', upload.single('file'), function (req, res) {
     }
 
     submissions.create(data, function(err, docs) {
-
         utils.handleError(err);
 
         console.log('Submission added to database');
