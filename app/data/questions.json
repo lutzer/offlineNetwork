@@ -6,7 +6,7 @@
 		"text" : "What could MAZI be a tool for in your work?",
 		"category" : "default",
 		"type" : "picture",
-		"color" : "grey",
+		"color" : "blue",
 		"actions" : [
 			{ 
 				"id" : "text",
@@ -23,7 +23,7 @@
 		"text" : "What are your main concerns/questions about MAZI?",
 		"category" : "people",
 		"type" : "text",
-		"color" : "grey",
+		"color" : "light-blue",
 		"actions" : [
 			{ 
 				"id" : "text",
@@ -41,7 +41,7 @@
 		"text" : "Share a picture you took at the workshop",
 		"category" : "people",
 		"type" : "picture",
-		"color" : "grey",
+		"color" : "cyan",
 		"actions" : [
 			{ 
 				"id" : "picture",

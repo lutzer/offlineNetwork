@@ -10,8 +10,8 @@
 
 /* fonts */
 @font-face {
-	font-family: 'titilium';
-	src: url('../fonts/TitilliumWeb-Regular.ttf');
+	font-family: 'crimson';
+	src: url('../fonts/CrimsonText-Roman.ttf');
 	font-weight: bold; 
 };
 
@@ -19,7 +19,7 @@
 /* page layout */
 
 body {
-	font-family: titilium;
+	font-family: crimson;
 }
 
 .page {
@@ -33,7 +33,7 @@ body {
 .logo {
 	text-align:center;
 	padding-top: 20px;
-	padding-bottom: 30px;
+	padding-bottom: 35px;
 }
 
 .logo img {
@@ -145,6 +145,7 @@ h1.link {
 	border-radius: $border-radius;
 	margin:0px 0 25px 0;
 	padding-bottom:15px;
+	text-align:center;
 
 	h2 {
 		margin: 0px;
@@ -385,12 +386,20 @@ h1.link {
 	background-color: #00b3aa;
 }
 
+.cyan {
+	background-color: #00A19A;
+}
+
 .blue {
-	background-color: #36A9E1;
+	background-color: #134B62;
 }
 
 .blue.light {
-	background-color: #36A9E1;
+	background-color: #134B62;
+}
+
+.light-blue {
+	background-color: #216888;
 }
 
 .yellow {
@@ -399,5 +408,9 @@ h1.link {
 
 .yellow.light {
 	background-color: #ffd54f;
+}
+
+.whiteText {
+	color: #ffffff;
 }
 

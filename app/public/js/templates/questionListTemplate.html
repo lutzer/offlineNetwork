@@ -4,7 +4,7 @@
 	<div>
 		<% _.each(items, function(item){ %>
 		<a href="#questions/<%= item.id %>">
-		<div class="question card shadow <%= item.color %> light" id="<%= item.id %>">
+		<div class="question card shadow <%= item.color %> light whiteText" id="<%= item.id %>">
 			<h2 class="<%= item.color %>"><%= item.title %></h2>
 			<p><%= item.text %></p>
 		</div>
