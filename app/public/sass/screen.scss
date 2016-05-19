@@ -30,8 +30,14 @@ body {
 	margin-bottom:10pt;
 }
 
+.logo {
+	text-align:center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
 .logo img {
-	width:100%;
+	width:30%;
 }
 
 @media screen and (min-width: $break-small) {
@@ -372,19 +378,19 @@ h1.link {
 }
 
 .green {
-	background-color: #72C14A;
+	background-color: #00A19A;
 }
 
 .green.light {
-	background-color: #85E057;
+	background-color: #00b3aa;
 }
 
 .blue {
-	background-color: #608CCE;
+	background-color: #36A9E1;
 }
 
 .blue.light {
-	background-color: #70A1EA;
+	background-color: #36A9E1;
 }
 
 .yellow {
