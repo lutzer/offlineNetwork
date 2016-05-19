@@ -2,53 +2,34 @@
 	{
 		"id" : 0,
 		"visible" : true,
-		"title" : "People",
-		"text" : "Which person(s) would you like to work with in the future?",
-		"category" : "people",
+		"title" : "Message",
+		"text" : "What could MAZI be a tool for in your work?",
+		"category" : "default",
 		"type" : "picture",
-		"color" : "green",
+		"color" : "grey",
 		"actions" : [
 			{ 
-				"id" : "name",
-				"type" : "string",
-			    "label" : "Your Name" 
-			},
-			{ 
-				"id" : "place",
-				"type" : "string",
-			    "label" : "Where are you from?" 
-			},
-			{ 
-				"id" : "picture",
-				"type" : "image",
-				"label" : "Which person(s) would you like to work with in the future? Take a selfie with them." 
+				"id" : "text",
+				"type" : "text",
+				"label" : "What do you want to use MAZI for in the future?",
+				"length" : 300
 			}
-		]
-		 
+		]	 
 	},
 	{
 		"id" : 1,
 		"visible" : true,
-		"title" : "Moment",
-		"text" : "Share a picture you took in the last three days.",
+		"title" : "Message",
+		"text" : "What are your main concerns/questions about MAZI?",
 		"category" : "people",
-		"type" : "picture",
-		"color" : "blue",
+		"type" : "text",
+		"color" : "grey",
 		"actions" : [
 			{ 
-				"id" : "name",
-				"type" : "string",
-			    "label" : "Your Name" 
-			},
-			{ 
-				"id" : "place",
-				"type" : "string",
-			    "label" : "Where are you from?" 
-			},
-			{ 
-				"id" : "picture",
-				"type" : "image",
-				"label" : "Share a picture you took in the last three days." 
+				"id" : "text",
+				"type" : "text",
+				"label" : "What is your idea or vision for future projects?",
+				"length" : 300
 			}
 		]
 		 
@@ -56,27 +37,16 @@
 	{
 		"id" : 2,
 		"visible" : true,
-		"title" : "Vision",
-		"text" : "What is your idea or vision for future projects?",
+		"title" : "Picture",
+		"text" : "Share a picture you took at the workshop",
 		"category" : "people",
-		"type" : "text",
-		"color" : "pink",
+		"type" : "picture",
+		"color" : "grey",
 		"actions" : [
 			{ 
-				"id" : "name",
-				"type" : "string",
-			    "label" : "Your Name" 
-			},
-			{ 
-				"id" : "place",
-				"type" : "string",
-			    "label" : "Where are you from?" 
-			},
-			{ 
-				"id" : "text",
-				"type" : "text",
-				"label" : "What is your idea or vision for future projects?",
-				"length" : 80
+				"id" : "picture",
+				"type" : "image",
+				"label" : "Share a picture you took in the last three days." 
 			}
 		]
 		 
