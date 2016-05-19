@@ -39,14 +39,14 @@ define([
 
 			this.collection = new SubmissionCollection();
 			this.collection.setSorting('_id', -1); //ascending
-			this.collection.setPageSize(6, { first: true });
+			this.collection.setPageSize(1, { first: true });
 
 			//bind model add event
 			this.listenTo(Backbone,'submissions:added', function(data) {
 				self.startPageTimer(true);
 			});
 
-			//this.startPageTimer();
+			this.startPageTimer();
 
 		},
 
