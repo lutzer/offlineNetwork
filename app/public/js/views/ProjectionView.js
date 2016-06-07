@@ -24,7 +24,8 @@ define([
 					image : this.model.getImage(),
 					name : this.model.getName(),
 					place : this.model.getPlace(),
-					text : this.model.getText()
+					text : this.model.getText(),
+					label : this.model.getLabel()
 				};
 			},
 		}),

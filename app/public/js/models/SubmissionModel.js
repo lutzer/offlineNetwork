@@ -49,7 +49,16 @@ define([
 				return text.result;
 			else
 				return ""
-		}
+		},
+
+		getLabel : function() {
+			var text = _.findWhere(this.get('results'),{type: 'text'});
+
+			if (text && text.label != 'false')
+				return text.label;
+			else
+				return ""
+		},
 	});
 
 	// Return the model for the module

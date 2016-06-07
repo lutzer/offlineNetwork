@@ -298,9 +298,30 @@ h1.link {
   height: 100%;
   border: 1px solid #000;
   background-color: #fff;
-  color: #fff;
+  color: #000;
 }
 /* line 300, ../sass/screen.scss */
+.projection-item .logo {
+  text-align: left;
+}
+/* line 304, ../sass/screen.scss */
+.projection-item .logo img {
+  width: auto;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
+  float: left;
+}
+/* line 312, ../sass/screen.scss */
+.projection-item .logo h1 {
+  display: inline-block;
+  line-height: 100px;
+  margin: 20px;
+  float: left;
+  font-size: 300%;
+  font-weight: bold;
+}
+/* line 322, ../sass/screen.scss */
 .projection-item h2 {
   display: block;
   background-size: 100%;
@@ -313,7 +334,7 @@ h1.link {
   font-size: 40px;
   display: none;
 }
-/* line 314, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .projection-item .author {
   position: absolute;
   bottom: 5%;
@@ -323,7 +344,7 @@ h1.link {
   padding: 10px;
   display: none;
 }
-/* line 324, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 .projection-item .background {
   position: relative;
   top: 0px;
@@ -338,15 +359,14 @@ h1.link {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 336, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .projection-item .text {
   position: absolute;
   top: 15%;
   margin: 15%;
-  color: #000;
   font-size: 240%;
 }
-/* line 344, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 .projection-item .foreground {
   position: relative;
   top: -100%;
@@ -355,87 +375,62 @@ h1.link {
 }
 
 /* helpers */
-/* line 353, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 .shadow {
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-/* line 357, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 .shadow.big {
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 361, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 .center {
   text-align: center;
 }
 
-/* line 365, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .gone {
   visibility: hidden;
 }
 
 /* color */
-/* line 371, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .grey {
   background-color: #EEEEEE;
 }
 
-/* line 375, ../sass/screen.scss */
+/* line 396, ../sass/screen.scss */
 .pink {
   background-color: #E24E91;
 }
 
-/* line 379, ../sass/screen.scss */
-.pink.light {
-  background-color: #FF60A8;
-}
-
-/* line 383, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .green {
-  background-color: #00A19A;
+  background-color: #729332;
 }
 
-/* line 387, ../sass/screen.scss */
-.green.light {
-  background-color: #00b3aa;
-}
-
-/* line 391, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .cyan {
-  background-color: #00A19A;
+  background-color: #1db1c2;
 }
 
-/* line 395, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .blue {
   background-color: #134B62;
 }
 
-/* line 399, ../sass/screen.scss */
-.blue.light {
-  background-color: #134B62;
-}
-
-/* line 403, ../sass/screen.scss */
-.light-blue {
-  background-color: #216888;
-}
-
-/* line 407, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 .yellow {
-  background-color: #ffc107;
+  background-color: #f7b930;
 }
 
-/* line 411, ../sass/screen.scss */
-.yellow.light {
-  background-color: #ffd54f;
-}
-
-/* line 415, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 .whiteText {
   color: #ffffff;
 }

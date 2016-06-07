@@ -3,15 +3,15 @@
 		"id" : 0,
 		"visible" : true,
 		"title" : "Message",
-		"text" : "What could MAZI be a tool for in your work?",
+		"text" : "Lieber Marktplatz, du bist ...",
 		"category" : "default",
-		"type" : "picture",
-		"color" : "blue",
+		"type" : "text",
+		"color" : "green",
 		"actions" : [
 			{ 
 				"id" : "text",
 				"type" : "text",
-				"label" : "What do you want to use MAZI for in the future?",
+				"label" : "Lieber Marktplatz, du bist ...",
 				"length" : 300
 			}
 		]	 
@@ -20,15 +20,15 @@
 		"id" : 1,
 		"visible" : true,
 		"title" : "Message",
-		"text" : "What are your main concerns/questions about MAZI?",
+		"text" : "Lieber Marktplatz, ich wünsche mir für dich ...",
 		"category" : "people",
 		"type" : "text",
-		"color" : "light-blue",
+		"color" : "cyan",
 		"actions" : [
 			{ 
 				"id" : "text",
 				"type" : "text",
-				"label" : "What is your idea or vision for future projects?",
+				"label" : "Lieber Marktplatz, ich wünsche mir für dich ...",
 				"length" : 300
 			}
 		]
@@ -37,16 +37,17 @@
 	{
 		"id" : 2,
 		"visible" : true,
-		"title" : "Picture",
-		"text" : "Share a picture you took at the workshop",
+		"title" : "Message",
+		"text" : "Lieber Marktplatz, du bist ...",
 		"category" : "people",
-		"type" : "picture",
-		"color" : "cyan",
+		"type" : "text",
+		"color" : "yellow",
 		"actions" : [
 			{ 
-				"id" : "picture",
-				"type" : "image",
-				"label" : "Share a picture you took in the last three days." 
+				"id" : "text",
+				"type" : "text",
+				"label" : "Lieber Marktplatz, du bist ...",
+				"length" : 300
 			}
 		]
 		 

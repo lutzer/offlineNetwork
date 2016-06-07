@@ -1,0 +1,54 @@
+[
+	{
+		"id" : 0,
+		"visible" : true,
+		"title" : "Message",
+		"text" : "What could MAZI be a tool for in your work?",
+		"category" : "default",
+		"type" : "picture",
+		"color" : "blue",
+		"actions" : [
+			{ 
+				"id" : "text",
+				"type" : "text",
+				"label" : "What do you want to use MAZI for in the future?",
+				"length" : 300
+			}
+		]	 
+	},
+	{
+		"id" : 1,
+		"visible" : true,
+		"title" : "Message",
+		"text" : "What are your main concerns/questions about MAZI?",
+		"category" : "people",
+		"type" : "text",
+		"color" : "light-blue",
+		"actions" : [
+			{ 
+				"id" : "text",
+				"type" : "text",
+				"label" : "What is your idea or vision for future projects?",
+				"length" : 300
+			}
+		]
+		 
+	},
+	{
+		"id" : 2,
+		"visible" : true,
+		"title" : "Picture",
+		"text" : "Share a picture you took at the workshop",
+		"category" : "people",
+		"type" : "picture",
+		"color" : "cyan",
+		"actions" : [
+			{ 
+				"id" : "picture",
+				"type" : "image",
+				"label" : "Share a picture you took in the last three days." 
+			}
+		]
+		 
+	}
+]

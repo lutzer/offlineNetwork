@@ -6,7 +6,7 @@ define([], function(){
 		 */
 		"web_service_url": "api/",
 
-		"web_socket_url": "http://192.168.72.2:8080",
+		"web_socket_url": "http://localhost:8080",
 		
 		"upload_directory": "uploads/",
 

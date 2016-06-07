@@ -295,7 +295,29 @@ h1.link {
 	height:100%;
 	border:1px solid #000;
 	background-color: #fff;
-	color:#fff;
+	color: #000;
+
+	.logo {
+
+		text-align: left;
+
+		img {
+			width: auto;
+			height: 100px;
+    		margin: 20px;
+    		display:inline-block;
+    		float:left;
+		}
+
+		h1 {
+			display:inline-block;
+			line-height: 100px;
+			margin:20px;
+    		float:left;
+    		font-size: 300%;
+    		font-weight: bold;
+		}
+	}
 
 	h2 {
 		display: block;
@@ -337,7 +359,6 @@ h1.link {
 		position: absolute;
     	top: 15%;
     	margin: 15%;
-    	color: #000;
     	font-size: 240%;
 	}
 	
@@ -376,41 +397,22 @@ h1.link {
 	background-color: #E24E91;
 }
 
-.pink.light {
-	background-color: #FF60A8;
-}
-
 .green {
-	background-color: #00A19A;
-}
-
-.green.light {
-	background-color: #00b3aa;
+	background-color: #729332;
 }
 
 .cyan {
-	background-color: #00A19A;
+	background-color: #1db1c2;
 }
 
 .blue {
 	background-color: #134B62;
 }
 
-.blue.light {
-	background-color: #134B62;
-}
-
-.light-blue {
-	background-color: #216888;
-}
-
 .yellow {
-	background-color: #ffc107;
+	background-color: #f7b930;
 }
 
-.yellow.light {
-	background-color: #ffd54f;
-}
 
 .whiteText {
 	color: #ffffff;
