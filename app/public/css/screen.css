@@ -6,14 +6,14 @@
 /* page breaks */
 /* fonts */
 @font-face {
-  font-family: 'crimson';
-  src: url("../fonts/CrimsonText-Roman.ttf");
+  font-family: 'abel';
+  src: url("../fonts/Abel-Regular.ttf");
   font-weight: bold;
 }
 /* page layout */
 /* line 21, ../sass/screen.scss */
 body {
-  font-family: crimson;
+  font-family: abel;
 }
 
 /* line 25, ../sass/screen.scss */
@@ -303,25 +303,27 @@ h1.link {
 /* line 300, ../sass/screen.scss */
 .projection-item .logo {
   text-align: left;
+  height: 20%;
 }
-/* line 304, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .projection-item .logo img {
+  height: 100%;
   width: auto;
-  height: 100px;
-  margin: 20px;
+  margin: 40px 20px 20px 40px;
   display: inline-block;
   float: left;
 }
-/* line 312, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 .projection-item .logo h1 {
+  position: absolute;
   display: inline-block;
-  line-height: 100px;
   margin: 20px;
+  padding-top: 3%;
   float: left;
   font-size: 300%;
   font-weight: bold;
 }
-/* line 322, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 .projection-item h2 {
   display: block;
   background-size: 100%;
@@ -334,7 +336,7 @@ h1.link {
   font-size: 40px;
   display: none;
 }
-/* line 336, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 .projection-item .author {
   position: absolute;
   bottom: 5%;
@@ -344,9 +346,9 @@ h1.link {
   padding: 10px;
   display: none;
 }
-/* line 346, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .projection-item .background {
-  position: relative;
+  position: absolute;
   top: 0px;
   left: 0px;
   height: 100%;
@@ -358,79 +360,85 @@ h1.link {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
+  overflow: hidden;
 }
-/* line 358, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .projection-item .text {
   position: absolute;
-  top: 15%;
-  margin: 15%;
+  top: 35%;
+  left: 0;
+  margin-left: 15%;
+  margin-right: 15%;
   font-size: 240%;
 }
-/* line 365, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 .projection-item .foreground {
-  position: relative;
-  top: -100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
+  width: 100%;
   z-index: 20;
+  overflow: hidden;
 }
 
 /* helpers */
-/* line 374, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 .shadow {
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-/* line 378, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .shadow.big {
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 382, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 .center {
   text-align: center;
 }
 
-/* line 386, ../sass/screen.scss */
+/* line 394, ../sass/screen.scss */
 .gone {
   visibility: hidden;
 }
 
 /* color */
-/* line 392, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .grey {
   background-color: #EEEEEE;
 }
 
-/* line 396, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .pink {
   background-color: #E24E91;
 }
 
-/* line 400, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .green {
   background-color: #729332;
 }
 
-/* line 404, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 .cyan {
   background-color: #1db1c2;
 }
 
-/* line 408, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 .blue {
   background-color: #134B62;
 }
 
-/* line 412, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .yellow {
   background-color: #f7b930;
 }
 
-/* line 417, ../sass/screen.scss */
+/* line 425, ../sass/screen.scss */
 .whiteText {
   color: #ffffff;
 }

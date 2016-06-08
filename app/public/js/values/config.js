@@ -12,7 +12,7 @@ define([], function(){
 
 		"submissions_per_page" : 6,
 
-		"projection_submission_interval" : 5000 // in ms
+		"projection_submission_interval" : 8000 // in ms
 			
 	};
 	return config;

@@ -10,8 +10,8 @@
 
 /* fonts */
 @font-face {
-	font-family: 'crimson';
-	src: url('../fonts/CrimsonText-Roman.ttf');
+	font-family: 'abel';
+	src: url('../fonts/Abel-Regular.ttf');
 	font-weight: bold; 
 };
 
@@ -19,7 +19,7 @@
 /* page layout */
 
 body {
-	font-family: crimson;
+	font-family: abel;
 }
 
 .page {
@@ -300,19 +300,21 @@ h1.link {
 	.logo {
 
 		text-align: left;
+		height:20%;
 
 		img {
+			height: 100%;
 			width: auto;
-			height: 100px;
-    		margin: 20px;
+    		margin: 40px 20px 20px 40px;
     		display:inline-block;
     		float:left;
 		}
 
 		h1 {
+			position: absolute;
 			display:inline-block;
-			line-height: 100px;
 			margin:20px;
+			padding-top:3%;
     		float:left;
     		font-size: 300%;
     		font-weight: bold;
@@ -344,7 +346,7 @@ h1.link {
 	}
 	
 	.background {
-		position: relative;
+		position: absolute;
 		top:0px;
 		left:0px;
 		height:100%;
@@ -353,20 +355,26 @@ h1.link {
 		background-repeat: no-repeat;
 		background-position: center center;
 		@include background-size(cover);
+		overflow: hidden;
 	}
 
 	.text {
 		position: absolute;
-    	top: 15%;
-    	margin: 15%;
+    	top: 35%;
+    	left:0;
+    	margin-left: 15%;
+    	margin-right: 15%;
     	font-size: 240%;
 	}
 	
 	.foreground {
-		position: relative;
-		top:-100%;
+		position: absolute;
+		top:0;
+		left:0;
 		height:100%;
+		width:100%;
 		z-index:20;
+		overflow: hidden;
 	}
 }
 
