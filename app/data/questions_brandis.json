@@ -1,0 +1,55 @@
+[
+	{
+		"id" : 0,
+		"visible" : true,
+		"title" : "Message",
+		"text" : "Lieber Marktplatz, du bist ...",
+		"category" : "default",
+		"type" : "text",
+		"color" : "green",
+		"actions" : [
+			{ 
+				"id" : "text",
+				"type" : "text",
+				"label" : "Lieber Marktplatz, du bist ...",
+				"length" : 300
+			}
+		]	 
+	},
+	{
+		"id" : 1,
+		"visible" : true,
+		"title" : "Message",
+		"text" : "Lieber Marktplatz, ich wünsche mir für dich ...",
+		"category" : "people",
+		"type" : "text",
+		"color" : "cyan",
+		"actions" : [
+			{ 
+				"id" : "text",
+				"type" : "text",
+				"label" : "Lieber Marktplatz, ich wünsche mir für dich ...",
+				"length" : 300
+			}
+		]
+		 
+	},
+	{
+		"id" : 2,
+		"visible" : true,
+		"title" : "Message",
+		"text" : "Lieber Marktplatz, du bist ...",
+		"category" : "people",
+		"type" : "text",
+		"color" : "yellow",
+		"actions" : [
+			{ 
+				"id" : "text",
+				"type" : "text",
+				"label" : "Lieber Marktplatz, du bist ...",
+				"length" : 300
+			}
+		]
+		 
+	}
+]

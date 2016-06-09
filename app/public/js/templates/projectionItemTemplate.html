@@ -1,13 +1,25 @@
-<div class="background" 
-	style="background-image: url(<% if (image) { %><%= path+image.file %><% } %>)"></div>
+<div class="background"></div>
 <div class="foreground">
 	<div class="logo">
-		<img src="images/logo.png">
 		<h1><%= label %></h1>
 	</div>
-	<h2><% if (image) { %><%= text %><% } %></h2>
 	
 	<div class="text">
 		<% if (!image) { %><%= text %><% } %>
+	</div>
+	<% if (image) { %>
+	<div class="image">
+		<img src="<%= path+image.file %>">
+	</div>
+	<% } %>
+	<div class="bottom-logo">
+		<div class="left">
+			<span class="tags">@hdzukunft #ldnw16 #Zukunftsbaustelle</span>
+		</div>
+		<div class="right">
+			<img src="images/haus_der_zukunft_logo.png">
+			<img src="images/lndw.jpg">
+			<img src="images/hybrid_letterbox_logo.png">
+		</div>
 	</div>
 </div>

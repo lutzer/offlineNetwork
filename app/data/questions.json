@@ -3,15 +3,15 @@
 		"id" : 0,
 		"visible" : true,
 		"title" : "Message",
-		"text" : "Lieber Marktplatz, du bist ...",
+		"text" : "Lieber Jahr 2000, wusstest du, dass ...",
 		"category" : "default",
 		"type" : "text",
-		"color" : "green",
+		"color" : "gray-gradient",
 		"actions" : [
 			{ 
 				"id" : "text",
 				"type" : "text",
-				"label" : "Lieber Marktplatz, du bist ...",
+				"label" : "Lieber Jahr 2000, wusstest du, dass ...",
 				"length" : 300
 			}
 		]	 
@@ -20,15 +20,15 @@
 		"id" : 1,
 		"visible" : true,
 		"title" : "Message",
-		"text" : "Lieber Marktplatz, ich wünsche mir für dich ...",
+		"text" : "Liebe Zukunft, ... ?",
 		"category" : "people",
 		"type" : "text",
-		"color" : "cyan",
+		"color" : "gray-gradient",
 		"actions" : [
 			{ 
 				"id" : "text",
 				"type" : "text",
-				"label" : "Lieber Marktplatz, ich wünsche mir für dich ...",
+				"label" : "Liebe Zukunft, ... ?",
 				"length" : 300
 			}
 		]
@@ -38,16 +38,33 @@
 		"id" : 2,
 		"visible" : true,
 		"title" : "Message",
-		"text" : "Lieber Marktplatz, du bist ...",
+		"text" : "Ich mal mir die Zukunft ...",
 		"category" : "people",
 		"type" : "text",
-		"color" : "yellow",
+		"color" : "gray-gradient",
 		"actions" : [
 			{ 
 				"id" : "text",
 				"type" : "text",
-				"label" : "Lieber Marktplatz, du bist ...",
+				"label" : "Ich mal mir die Zukunft ...",
 				"length" : 300
+			}
+		]
+		 
+	},
+	{
+		"id" : 3,
+		"visible" : false,
+		"title" : "Moment",
+		"text" : "Share a picture you took in the last three days.",
+		"category" : "people",
+		"type" : "picture",
+		"color" : "blue",
+		"actions" : [
+			{ 
+				"id" : "picture",
+				"type" : "image",
+				"label" : "Share a picture you took in the last three days." 
 			}
 		]
 		 

@@ -52,7 +52,7 @@ define([
 		},
 
 		getLabel : function() {
-			var text = _.findWhere(this.get('results'),{type: 'text'});
+			var text = this.get('results')[0];
 
 			if (text && text.label != 'false')
 				return text.label;
