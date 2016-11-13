@@ -6,14 +6,14 @@
 /* page breaks */
 /* fonts */
 @font-face {
-  font-family: 'crimson';
-  src: url("../fonts/CrimsonText-Roman.ttf");
+  font-family: 'abel';
+  src: url("../fonts/Abel-Regular.ttf");
   font-weight: bold;
 }
 /* page layout */
 /* line 21, ../sass/screen.scss */
 body {
-  font-family: crimson;
+  font-family: abel;
 }
 
 /* line 25, ../sass/screen.scss */
@@ -34,7 +34,7 @@ body {
 
 /* line 39, ../sass/screen.scss */
 .logo img {
-  width: 50%;
+  width: 30%;
 }
 
 @media screen and (min-width: 650px) {
@@ -289,26 +289,23 @@ h1.link {
   right: 0px;
   left: 0px;
   background-color: #000;
-  overflow: hidden;
 }
 
-/* line 292, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .projection-item {
-  position: absolute;
   float: left;
+  width: 100%;
   height: 100%;
-  left: 10%;
-  right: 10%;
   border: 1px solid #000;
   background-color: #fff;
-  color: #fff;
+  color: #000;
 }
-/* line 302, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 .projection-item .logo {
   text-align: left;
   height: 20%;
 }
-/* line 307, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .projection-item .logo img {
   height: 100%;
   width: auto;
@@ -316,17 +313,17 @@ h1.link {
   display: inline-block;
   float: left;
 }
-/* line 315, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 .projection-item .logo h1 {
   position: absolute;
   display: inline-block;
   margin: 20px;
-  padding-top: 0;
+  padding-top: 3%;
   float: left;
-  font-size: 320%;
+  font-size: 300%;
   font-weight: bold;
 }
-/* line 326, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 .projection-item h2 {
   display: block;
   background-size: 100%;
@@ -339,7 +336,7 @@ h1.link {
   font-size: 40px;
   display: none;
 }
-/* line 340, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 .projection-item .author {
   position: absolute;
   bottom: 5%;
@@ -349,7 +346,7 @@ h1.link {
   padding: 10px;
   display: none;
 }
-/* line 350, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .projection-item .background {
   position: absolute;
   top: 0px;
@@ -364,151 +361,84 @@ h1.link {
   -webkit-background-size: cover;
   background-size: cover;
   overflow: hidden;
-  background: #000000;
 }
-/* line 364, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .projection-item .text {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
   font-size: 240%;
 }
-/* line 373, ../sass/screen.scss */
-.projection-item .image {
-  position: absolute;
-  top: 20%;
-  left: 0;
-  height: 60%;
-  width: 100%;
-  text-align: center;
-}
-/* line 381, ../sass/screen.scss */
-.projection-item .image img {
-  height: 100%;
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-/* line 387, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 .projection-item .foreground {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
   height: 100%;
+  width: 100%;
   z-index: 20;
   overflow: hidden;
 }
-/* line 397, ../sass/screen.scss */
-.projection-item .bottom-logo {
-  position: absolute;
-  top: 85%;
-  bottom: 0;
-  width: 100%;
-}
-/* line 404, ../sass/screen.scss */
-.projection-item .bottom-logo .tags {
-  font-size: 140%;
-  line-height: 60px;
-}
-/* line 409, ../sass/screen.scss */
-.projection-item .bottom-logo .right {
-  float: right;
-}
-/* line 413, ../sass/screen.scss */
-.projection-item .bottom-logo .left {
-  float: left;
-}
-/* line 417, ../sass/screen.scss */
-.projection-item .bottom-logo img {
-  height: 60px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
 
 /* helpers */
-/* line 426, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 .shadow {
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-/* line 430, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .shadow.big {
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 434, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 .center {
   text-align: center;
 }
 
-/* line 438, ../sass/screen.scss */
+/* line 394, ../sass/screen.scss */
 .gone {
   visibility: hidden;
 }
 
 /* color */
-/* line 444, ../sass/screen.scss */
-.gray-gradient {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIyMjIyMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzY2NjY2NiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #222222), color-stop(100%, #666666));
-  background-image: -moz-linear-gradient(#222222, #666666);
-  background-image: -webkit-linear-gradient(#222222, #666666);
-  background-image: linear-gradient(#222222, #666666);
-}
-
-/* line 448, ../sass/screen.scss */
-.black {
-  background-color: #000000;
-}
-
-/* line 452, ../sass/screen.scss */
-.red {
-  background-color: #e30613;
-}
-
-/* line 456, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .grey {
   background-color: #EEEEEE;
 }
 
-/* line 460, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .pink {
   background-color: #E24E91;
 }
 
-/* line 464, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .green {
   background-color: #729332;
 }
 
-/* line 468, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 .cyan {
   background-color: #1db1c2;
 }
 
-/* line 472, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 .blue {
   background-color: #134B62;
 }
 
-/* line 476, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .yellow {
-  background-color: #ffdd0e;
+  background-color: #f7b930;
 }
 
-/* line 480, ../sass/screen.scss */
-.purple {
-  background-color: #862a7a;
-}
-
-/* line 485, ../sass/screen.scss */
+/* line 425, ../sass/screen.scss */
 .whiteText {
   color: #ffffff;
 }

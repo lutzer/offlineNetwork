@@ -3,7 +3,7 @@
 		"id" : 0,
 		"visible" : true,
 		"title" : "Message",
-		"text" : "Lieber Jahr 2000, wusstest du, dass ...",
+		"text" : "Liebes Jahr 2000, wusstest du, dass ...",
 		"category" : "default",
 		"type" : "text",
 		"color" : "gray-gradient",
@@ -11,7 +11,7 @@
 			{ 
 				"id" : "text",
 				"type" : "text",
-				"label" : "Lieber Jahr 2000, wusstest du, dass ...",
+				"label" : "Liebes Jahr 2000, wusstest du, dass ...",
 				"length" : 300
 			}
 		]	 

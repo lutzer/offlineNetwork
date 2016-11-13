@@ -10,8 +10,8 @@
 
 /* fonts */
 @font-face {
-	font-family: 'abel';
-	src: url('../fonts/Abel-Regular.ttf');
+	font-family: 'crimson';
+	src: url('../fonts/CrimsonText-Roman.ttf');
 	font-weight: bold; 
 };
 
@@ -19,7 +19,7 @@
 /* page layout */
 
 body {
-	font-family: abel;
+	font-family: crimson;
 }
 
 .page {
@@ -37,7 +37,7 @@ body {
 }
 
 .logo img {
-	width:30%;
+	width: 50%;
 }
 
 @media screen and (min-width: $break-small) {
@@ -286,16 +286,18 @@ h1.link {
 	right:0px;
 	left:0px;
 	background-color: #000;
+	overflow: hidden;
 }
 
 .projection-item {
-
+	position: absolute;
 	float:left;
-	width:100%;
 	height:100%;
+	left:10%;
+	right:10%;
 	border:1px solid #000;
 	background-color: #fff;
-	color: #000;
+	color: #fff;
 
 	.logo {
 
@@ -314,9 +316,9 @@ h1.link {
 			position: absolute;
 			display:inline-block;
 			margin:20px;
-			padding-top:3%;
+			padding-top:0;
     		float:left;
-    		font-size: 300%;
+    		font-size: 320%;
     		font-weight: bold;
 		}
 	}
@@ -356,25 +358,67 @@ h1.link {
 		background-position: center center;
 		@include background-size(cover);
 		overflow: hidden;
+		background: #000000;
 	}
 
 	.text {
 		position: absolute;
-    	top: 35%;
+    	top: 30%;
     	left:0;
-    	margin-left: 15%;
-    	margin-right: 15%;
+    	margin-left: 20px;
+    	margin-right: 20px;
     	font-size: 240%;
+	}
+
+	.image {
+		position: absolute;
+		top: 20%;
+		left:0;
+		height:60%;
+		width:100%;
+		text-align: center;
+
+		img {
+			height: 100%;
+			@include filter(invert(100%));
+		}
 	}
 	
 	.foreground {
 		position: absolute;
 		top:0;
 		left:0;
+		right:0;
 		height:100%;
-		width:100%;
 		z-index:20;
 		overflow: hidden;
+	}
+
+	.bottom-logo {
+
+		position: absolute;
+		top: 85%;
+		bottom:0;
+		width:100%;
+
+		.tags {
+			font-size: 140%;
+			line-height:60px;
+		}
+
+		.right {
+			float:right;
+		}
+
+		.left {
+			float:left
+		}
+
+		img {
+			height: 60px;
+			margin-right: 20px;
+			margin-left:20px
+		}
 	}
 }
 
@@ -397,6 +441,18 @@ h1.link {
 
 /* color */
 
+.gray-gradient {
+	@include background-image(linear-gradient(#222, #666));
+}
+
+.black {
+	background-color: #000000;
+}
+
+.red {
+	background-color: #e30613;
+}
+
 .grey {
 	background-color: #EEEEEE;
 }
@@ -418,7 +474,11 @@ h1.link {
 }
 
 .yellow {
-	background-color: #f7b930;
+	background-color: #ffdd0e;
+}
+
+.purple {
+	background-color: #862a7a;
 }
 
 
